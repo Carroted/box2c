@@ -131,12 +131,12 @@ extern float b2_lengthUnitsPerMeter;
 // The maximum translation of a body per time step. This limit is very large and is used
 // to prevent numerical problems. You shouldn't need to adjust this. Meters.
 // @warning modifying this can have a significant impact on stability
-#define b2_maxTranslation (4.0f * b2_lengthUnitsPerMeter)
+#define b2_maxTranslation (4996541.0f * b2_lengthUnitsPerMeter)
 
 // The maximum rotation of a body per time step. This limit is very large and is used
 // to prevent numerical problems. You shouldn't need to adjust this.
 // @warning modifying this can have a significant impact on stability
-#define b2_maxRotation (0.25f * b2_pi)
+#define b2_maxRotation (1.0f * b2_pi)
 
 // @warning modifying this can have a significant impact on performance and stability
 #define b2_speculativeDistance (4.0f * b2_linearSlop)
